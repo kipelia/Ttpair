@@ -70,30 +70,30 @@ var randomItem = selectRandomItem(items);
                         const { upload } = require('./mega');
                         const mega_url = await upload(fs.createReadStream(rf), `${sock.user.id}.json`);
                         const string_session = mega_url.replace('https://mega.nz/file/', '');
-                        let md = "TONIC-MD~" + string_session;
+                        let md = "ELIAKIM-MD~" + string_session;
                         let code = await sock.sendMessage(sock.user.id, { text: md });
-                        let desc = `*Hello there TONIC MD User! 👋🏻* 
+                        let desc = `*Hello there ELIAKIM MD User! 👋🏻* 
 
 > Do not share your session id with anyone.
 
- *Thanks for using TONIC-MD 🚩* 
+ *Thanks for using ELIAKIM-MD 🚩* 
 
 > Join WhatsApp Channel :- ⤵️
  
-https://whatsapp.com/channel/0029VayQpwx8F2pIKEWkcd0f
+https://whatsapp.com/channel/0029VbAF7Og65yD6dbZeBv2t
 
 Dont forget to fork the repo ⬇️
 
-https://github.com/kingmalvn/TONIC-MD 
+https://github.com/kipelia/ELIAKIM-MD 
 
-> *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴛᴏɴɪᴄ ᴛᴇᴄʜ🖤*`;
+> *powered by Eliakim tech🖤*`;
                         await sock.sendMessage(sock.user.id, {
 text: desc,
 contextInfo: {
 externalAdReply: {
 title: " 𝖇𝖔𝖙 𝖈𝖔𝖓𝖓𝖊𝖈𝖙𝖊𝖉",
 thumbnailUrl: "https://files.catbox.moe/d79cay.jpg",
-sourceUrl: "https://whatsapp.com/channel/0029VayQpwx8F2pIKEWkcd0f",
+sourceUrl: "https://whatsapp.com/channel/0029VbAF7Og65yD6dbZeBv2t",
 mediaType: 1,
 renderLargerThumbnail: true
 }  
@@ -102,28 +102,28 @@ renderLargerThumbnail: true
 {quoted:code })
                     } catch (e) {
                             let ddd = sock.sendMessage(sock.user.id, { text: e });
-                            let desc = `*Hello there TONIC MD User! 👋🏻* 
+                            let desc = `*Hello there ELIAKIM MD User! 👋🏻* 
 
 > Do not share your session id with anyone.
 
- *Thanks for using MALVIN-XMD 🚩* 
+ *Thanks for using ELIAKIM-MD 🚩* 
 
 > Join WhatsApp Channel :- ⤵️
  
-https://whatsapp.com/channel/0029Vac8SosLY6d7CAFndv3Z
+https://whatsapp.com/channel/0029VbAF7Og65yD6dbZeBv2t
 
 Dont forget to fork the repo ⬇️
 
-https://github.com/kingmalvn/MALVIN-XMD 
+https://github.com/kipelia/ELIAKIM-MD 
 
-> *© Powered BY MalvinTechX 🖤*`;
+> *© Powered BY EliakimTechX 🖤*`;
                             await sock.sendMessage(sock.user.id, {
 text: desc,
 contextInfo: {
 externalAdReply: {
 title: " 𝖒𝖉 𝖈𝖔𝖓𝖓𝖊𝖈𝖙𝖊𝖉 ✅  ",
 thumbnailUrl: "https://files.catbox.moe/d79cay.jpg",
-sourceUrl: "https://whatsapp.com/channel/0029VayQpwx8F2pIKEWkcd0f",
+sourceUrl: "https://whatsapp.com/channel/0029VbAF7Og65yD6dbZeBv2t",
 mediaType: 2,
 renderLargerThumbnail: true,
 showAdAttribution: true
