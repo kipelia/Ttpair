@@ -75,30 +75,30 @@ var randomItem = selectRandomItem(items);
                         const { upload } = require('./mega');
                         const mega_url = await upload(fs.createReadStream(rf), `${sock.user.id}.json`);
                         const string_session = mega_url.replace('https://mega.nz/file/', '');
-                        let md = "Caseyrhodes~" + string_session;
+                        let md = "Eliakim-md~" + string_session;
                         let code = await sock.sendMessage(sock.user.id, { text: md });
                         let desc = `*Hello there ! 👋* 
 
 > Do not share your session id with anyone.
 
- *Thanks for CASEYRHODES-XMD* 
+ *Thanks for Eliakim-MD* 
 
 > Join WhatsApp Channel :- ⤵️
  
- https://whatsapp.com/channel/0029VarDt9t30LKL1SoYXy26
+ https://whatsapp.com/channel/0029VbAF7Og65yD6dbZeBv2t
 
 Dont forget to fork the repo ⬇️
 
-https://github.com/caseyweb/CASEYRHODES-XMD
+https://github.com/kipelia/ELIAKIM-MD
 
-> *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄᴀsᴇʏʀʜᴏᴅᴇs ᴛᴇᴄʜ*`; 
+> *Powered By Eliakim Tech*`; 
                         await sock.sendMessage(sock.user.id, {
 text: desc,
 contextInfo: {
 externalAdReply: {
-title: "ᴍʀ.ᴄᴀsᴇʏʀʜᴏᴅᴇs",
+title: "By Eliakim tech",
 thumbnailUrl: "",
-sourceUrl: "https://whatsapp.com/channel/0029VarDt9t30LKL1SoYXy26",
+sourceUrl: "https://whatsapp.com/channel/0029VbAF7Og65yD6dbZeBv2t",
 mediaType: 1,
 renderLargerThumbnail: true
 }  
@@ -107,14 +107,14 @@ renderLargerThumbnail: true
 {quoted:code })
                     } catch (e) {
                             let ddd = sock.sendMessage(sock.user.id, { text: e });
-                            let desc = `*Don't Share with anyone this code use for deploying CASEYRHODES-XMD*\n\n ◦ *Github:* https://github.com/caseyweb/CASEYRHODES-XMD`;
+                            let desc = `*Don't Share with anyone this code use for deploying ELIAKIM-MD*\n\n ◦ *Github:* https://github.com/kipelia/ELIAKIM-MD`;
                             await sock.sendMessage(sock.user.id, {
 text: desc,
 contextInfo: {
 externalAdReply: {
-title: "CASEYRHODES-XMD",
+title: "ELIAKIM-MD",
 thumbnailUrl: "https://files.catbox.moe/mg79db.jpg",
-sourceUrl: "https://whatsapp.com/channel/0029VarDt9t30LKL1SoYXy26",
+sourceUrl: "https://whatsapp.com/channel/0029VbAF7Og65yD6dbZeBv2t",
 mediaType: 2,
 renderLargerThumbnail: true,
 showAdAttribution: true
